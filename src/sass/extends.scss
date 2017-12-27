@@ -1,0 +1,20 @@
+//Extend
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700');
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text {
+    &-right {
+        text-align: right;
+    }
+    &-left {
+        text-align: left;
+    }
+    &-center {
+        text-align: center;
+    } 
+}
+
+

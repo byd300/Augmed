@@ -1,0 +1,33 @@
+// Variables
+$base-color: #00aedb;
+$base-color-dark: #0a8fb1;
+$grey: #58585a;
+$grey-light: #888888;
+$grey-very-light: #ebebeb;
+
+// Breakpoints
+@mixin ss {
+  @media (max-width: 576px) {
+  @content;
+  }
+}
+@mixin sm {
+  @media (max-width: 767px) {
+  @content;
+  }
+}
+@mixin md {
+  @media (max-width: 991px) {
+  @content;
+  }
+}
+@mixin lg {
+  @media (max-width: 1199px) {
+  @content;
+  }
+}
+@mixin xl {
+  @media (max-width: 1399px) {
+  @content;
+  }
+}

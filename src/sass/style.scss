@@ -1,0 +1,64 @@
+@import "mixins";
+@import "extends";
+
+body {
+	@extend .roboto;
+}
+
+header {
+	.contact {
+		font-weight: 300;
+		font-size: 0.9rem;
+	}
+}
+
+
+.navbar {
+	.navbar-collapse	{
+		ul {
+			li {
+				padding-left: 50px !important;
+				a {
+					text-decoration: none;
+					color: $grey !important;
+					font-size: 1.15rem;
+					font-weight: 400;
+					&:hover {
+						color: $grey-light!important;
+
+
+					}
+				}
+			}
+		}
+	}
+}
+
+.navbar {
+	    padding-right: .5rem;
+	    margin-top: -15px;
+	    &-brand {
+	    	img {
+	    		width: 210px;
+	    		margin-top: -15px;
+	    		@include md {
+	    			margin-top: 10px;
+	    		}
+	    	}
+	    	padding-top: 0rem;
+	    	@include ss {
+	    		padding-right: 150px;
+	    	}
+	    
+	    }
+}
+
+.bg-faded {
+    background-color: transparent;
+    .navbar-toggler-right {
+		margin-top: 15px;
+	}
+}
+
+
+
