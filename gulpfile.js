@@ -3,10 +3,12 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
+const autoprefixer = require('gulp-autoprefixer');
 var htmlreplace = require('gulp-html-replace');
 var htmlMin = require('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload();
+
 
 gulp.task('styles', function() {
     gulp.src('src/sass/**/*.scss')
@@ -17,10 +19,16 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('src/css/'));
     gulp.src('src/css/**/*.css')
 		.pipe(concat('style.css'))
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('dist/'));
+	gulp.src('src/css/**/*.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+            .pipe(gulp.dest('dist/'));
 	gulp.src('src/js/**/*.js')
 		.pipe(concat('final.js'))
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('dist/'));
 	gulp.src('src/images/*')
 		.pipe(changed('dist/images'))
 		.pipe(imagemin())
