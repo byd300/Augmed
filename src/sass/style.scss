@@ -9,9 +9,19 @@ header {
 	.contact {
 		font-weight: 300;
 		font-size: 0.9rem;
+		.fa-facebook-f, .fa-map-marker-alt, .fa-phone  {
+			margin-right: 10px;
+			color: $grey;			
+		}
 	}
 }
 
+
+.rwd {
+  display: inline-block;
+  width: 100%;
+  height: auto; 
+}
 
 .navbar {
 	.navbar-collapse	{
@@ -23,10 +33,11 @@ header {
 					color: $grey !important;
 					font-size: 1.15rem;
 					font-weight: 400;
+
 					&:hover {
-						color: $grey-light!important;
-
-
+						border-bottom: solid 2px $base-color;
+					    display: inline-block;
+					    padding-bottom: 3px;
 					}
 				}
 			}
@@ -39,7 +50,7 @@ header {
 	    margin-top: -15px;
 	    &-brand {
 	    	img {
-	    		width: 210px;
+	    		width: 170px;
 	    		margin-top: -15px;
 	    		@include md {
 	    			margin-top: 10px;
@@ -61,4 +72,72 @@ header {
 }
 
 
+// Carousel
 
+// Bootstrap
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 50px !important;
+	height: 50px !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	opacity: 0.8;
+}
+
+.btn-secondary {
+	background-color: transparent;
+}
+// Bootstrap-end
+
+.carousel-caption {
+	color: $grey;
+	text-align: left;
+	max-width: 400px;
+	margin-left: 560px;
+	margin-bottom: 100px;
+
+	@include xl {
+		margin-left: 460px;
+		margin-bottom: 40px;	
+	}
+	@include lg {
+		margin-left: 350px;
+		margin-bottom: 10px;	
+	}
+		
+	@include md {
+		margin-left: 260px;
+		margin-bottom: 25px;	
+	}
+	@include sm {
+		margin-left: 230px;
+		margin-bottom: 15px;	
+	}
+	p {
+		font-size: 0.7rem;
+		line-height: 2;
+		@include md {
+			display: none;
+		}
+	}
+	h3 {
+		font-size: 2.5rem;
+		padding-bottom: 15px;
+		@include md {
+			padding-bottom: 1px;			
+		}
+	}
+	h5 {
+		font-size: 1.2rem;
+		font-weight: 300;
+		line-height: 0.4;
+	}
+}
+
+// Carousel-End
