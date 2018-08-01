@@ -1,5 +1,8 @@
 @import "mixins";
 @import "extends";
+@import "oferta__menu";
+@import "oferta__content";
+
 
 body {
 	@extend .open-sans;
@@ -31,7 +34,13 @@ header {
 	}
 }
 
+.bold {
+	font-weight: 700;
+}
+
+
 .title {
+		text-align: left;
 	h3 {
 		font-size: 2rem;
 	}
@@ -61,7 +70,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 	@extend .open-sans;
 	color: $grey;
 }
-
+h6 {
+	line-height:1.6rem;
+}
 .btn {
 	border-radius: 0;
 	cursor:pointer;
@@ -82,10 +93,23 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .rwd {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: auto; 
 }
+
+.sub__header {		
+	.header__bg {
+		max-height: 400px;
+		position: relative;
+	}
+}
+
+.line {
+	height:3px;
+	background-color: $blue-color;
+}
+
 
 .navbar {
 	@extend .roboto;
@@ -117,30 +141,39 @@ h1, h2, h3, h4, h5, h6, p, span {
 			}
 		}
 	}
+	.active {
+	border-bottom: solid 2px $blue-color;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
 }
 
 /* Navbar */
 .navbar {
-	    padding-right: .5rem;
-	    margin-top: -15px;
-	    &-brand {
-	    	img {
-	    		width: 170px;
-	    		margin-top: -15px;
-	    		@include md {
-	    			margin-top: 10px;
-	    		}
-	    	}
-	    	padding-top: 0rem;
-	    	@include xs {
-	    		padding-right: 150px;
-	    	}
-	    
-	    }
+	top: 10px;
+	padding-bottom: 30px;
+    padding-right: .5rem;
+    margin-top: -15px;
+    &-brand {
+    	img {
+    		width: 170px;
+    		margin-top: -15px;
+    		@include md {
+    			margin-top: 10px;
+    		}
+    	}
+    	padding-top: 0rem;
+    	@include xs {
+    		padding-right: 150px;
+    	}
+    
+    }
 }
 
 .bg-faded {
     background-color: transparent;
+        text-align: left;
     .navbar-toggler-right {
 		margin-top: 15px;
 	}
@@ -302,14 +335,19 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 /* //faceboock-card */
 
+
 /* Submenu */
 .submenu {
+	.xxx {
+		    overflow: hidden;
+	}
 	a {
 		background-color: $blue-color;
 		text-decoration: none;
 		&:hover {
 			text-decoration: none;
 			background-color: $blue-dark;
+			 transition: all 0.3s ease 0s;
 		}
 	}
 	&__box {
@@ -318,6 +356,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 		padding-bottom: 80px;
 		font-family: FontAwesome;
 		content: "\f087";
+		    text-align: left;
 		.btn {
 			position: absolute;
 			right: 40px;
@@ -434,6 +473,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 	padding-bottom: 100px;
 	&__txt {
 		padding-right: 40px;
+
 	}
 	&__img {
 		width: 80%;
@@ -446,6 +486,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 	padding-top: 60px;
 	padding-bottom: 100px;
 	background-color: $grey-very-light;
+	&__wrapper {
+		padding-bottom: 90px;
+	}
 	&__types { 
 		padding-top: 30px;
 		padding-right:40px;
@@ -675,3 +718,111 @@ h1, h2, h3, h4, h5, h6, p, span {
 	display: flex; 
 }
 
+/* Cennik */
+
+.cennik {
+	z-index:2;
+	padding: 50px 0px 130px 0px;
+	p {
+		padding-bottom: 15px;
+	}
+
+}
+
+table {
+	width: 100%;
+	tr:nth-of-type(2n) {
+    background: #eaf0f4;
+	}
+
+	th {
+		font-size: 18px;
+		background: #00508b;
+    	color: #fff;
+    	padding:10px;
+    	font-weight: 400;
+	}
+	td {
+	    padding: 10px;
+	    text-align: left;
+	    font-size: 14px;
+	    &:last-child {
+	    	text-align: right;
+    	}
+	}
+}
+
+.kontakt {
+	p {
+		font-size: 1.2rem;
+	}
+	span {
+		font-size: 1.3rem;
+		margin-left: 15px;
+		padding-top: 15px;
+	}
+	&-info {
+		padding-bottom:10px;
+		&-row {
+			padding-top: 45px;
+			span {
+				display: inline-block;
+			}
+		}
+	}
+	.svg-inline--fa {
+		font-size: 2.7rem;
+		color: $grey;
+		margin-right: 30px;
+	}
+}
+
+
+.btn,
+button {
+  transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: 400px) {
+    width: auto;
+  }
+}
+
+.btn-arrow {
+  	position: relative;
+    transition: background-color 300ms ease-out;
+  span {
+    display: inline-block;
+    position: relative;
+    transition: all 300ms ease-out;
+    will-change: transform;
+   
+  }
+  &:hover span {
+    transform: translate3d(-1rem, 0, 0);
+  }
+  svg {
+    position: absolute;
+    width: 1.9em;
+    right: 0px;
+    right: 0rem;
+    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 300ms ease-out;
+    will-change: right, opacity;
+    * {
+      stroke-width: 5;
+      stroke-color: transparent;
+    }
+  }
+  &:hover svg {
+    opacity: 1;
+    right: -2rem;
+  }
+}

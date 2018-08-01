@@ -8,6 +8,7 @@ var htmlreplace = require('gulp-html-replace');
 var htmlMin = require('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload();
+	connec = require('gulp-connect-php');
 
 
 gulp.task('styles', function() {
@@ -33,7 +34,7 @@ gulp.task('styles', function() {
 		.pipe(changed('dist/images'))
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/images'))
-	gulp.src('src/*.html')
+	gulp.src('src/*.php')
 		.pipe(htmlreplace({
 			'css' : 'style.css',
 			'js' : 'final.js'
@@ -44,17 +45,18 @@ gulp.task('styles', function() {
 			collapseWhitespace: true
 		}))
 		.pipe(gulp.dest('dist/'))
-});
 
+});
 
 //Watch task
 gulp.task('default',function() {
 	//BrowserSync
 	browserSync.init({
-	    server: "src"
+	    server: "src/"
 	}) 
+
     gulp.watch('src/sass/**/*.scss',['styles']).on('change', browserSync.reload);
     gulp.watch('src/css/**/*.css',['styles']).on('change', browserSync.reload);
     gulp.watch('src/js/**/*.js',['styles']).on('change', browserSync.reload);
-    gulp.watch('src/**/*.html',['styles']).on('change', browserSync.reload);
+    gulp.watch('src/**/*.php',['styles']).on('change', browserSync.reload);
 });

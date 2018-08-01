@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8" />
-
-	<title>Augmed</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-
-</head>
-	<body id="top"> 
-		<header>
-			<div class="container">
-				<div class="contact row d-flex flex-row justify-content-end">
-					<div id="fb-none" class="p-3">
-						<i class="fab fa-facebook-f"></i>
-						<a href="https://www.facebook.com/augmed/" class="facebook-link"><span>Znajdź nas na facebooku</span></a>
-					</div>
-  					<div class="p-3">
-  						<i class="fas fa-map-marker-alt"></i>Łabędzka 20d
-  					</div>
-  					<div class="p-3"><i class="fas fa-phone">
-  						</i>32 888 58 08
-  					</div>
-				</div>
-				<div class="row">
-					<div class="container">
-						<div class="row menu-wrapper ">
-							<nav class="navbar navbar-toggleable-md navbar-light bg-faded ml-auto col-md-12">
-						 	 	<button class=" navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-							    <span class="navbar-toggler-icon"></span>
-							  	</button>
-								  	<a class="navbar-brand" href="http://www.augmed.pl">
-								  		<img src="images/logo.png" alt="Tauron logo">
-								  	</a>
-							 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-								    <ul class="navbar-nav mr-auto d-flex flex-row justify-content-end navbar-collapse">
-								      	<li><a class="nav-item nav-link" href="#">Start<span class="sr-only">(current)</span></a></li>
-								      	<li><a class="nav-item nav-link" href="#">Oferta</a></li>
-								      	<li><a class="nav-item nav-link" href="#">Cennik</a></li>
-								      	<li><a class="nav-item nav-link" href="#">Kontakt</a></li>
-								    </ul>
-								</div>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>	
-		</header>
+<?php $page='index'; include 'header.php';?>
 
 		<!-- slider -->
 		<div class="container-fluid">
@@ -68,7 +18,28 @@
 					    <h3>Lorem ipsum dolor </h3>
 					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						<button type="button" class="btn btn-secondary">sprawdź ofertę</button>
+						<a role="button" class="btn btn-secondary" href="oferta.php">sprawdź ofertę</a>
+					  </div>
+					  <img id="mobile" src="images/slider_bg-mobile.png" class="img-fluid" alt="Lorem  ipsum">
+					   <div class="carousel-caption--mobile">
+					  	<h5>Lorem ipsum dolor sit amet </h5>
+					    <h3>Lorem ipsum dolor </h3>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<a role="button" class="btn btn-secondary" href="oferta.php">sprawdź ofertę</a>
+					  </div>
+				    </div>
+				 
+				  <!-- slide-2 -->
+  				 
+				    <div class="carousel-item ">
+				      <img id="standard" src="images/slider_bg.png" class="img-fluid" alt="Lorem ipsum">
+					  <div class="carousel-caption d-none d-md-block">
+					  	<h5>Lorem ipsum dolor sit amet </h5>
+					    <h3>Lorem ipsum dolor </h3>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						<a role="button" class="btn btn-secondary" href="oferta.php">sprawdź ofertę</a>
 					  </div>
 					  <img id="mobile" src="images/slider_bg-mobile.png" class="img-fluid" alt="Lorem ipsum">
 					   <div class="carousel-caption--mobile  ">
@@ -76,52 +47,31 @@
 					    <h3>Lorem ipsum dolor </h3>
 					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-						<button type="button" class="btn btn-secondary">sprawdź ofertę</button>
+						<a role="button" class="btn btn-secondary" href="oferta.php">sprawdź ofertę</a>
+					  </div>
+				    </div>
+				
+				  <!-- slide-3 -->	
+  				  
+				    <div class="carousel-item">
+				      <img id="standard" src="images/slider_bg.png" class="img-fluid" alt="Lorem ipsum">
+					  <div class="carousel-caption d-none d-md-block">
+					  	<h5>Lorem ipsum dolor sit amet </h5>
+					    <h3>Lorem ipsum dolor </h3>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						<a role="button" class="btn btn-secondary" href="oferta.php">sprawdź ofertę</a>
+					  </div>
+					  <img id="mobile" src="images/slider_bg-mobile.png" class="img-fluid" alt="Lorem ipsum">
+					   <div class="carousel-caption--mobile  ">
+					  	<h5>Lorem ipsum dolor sit amet </h5>
+					    <h3>Lorem ipsum dolor </h3>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<a role="button" class="btn btn-secondary" href="oferta.php">sprawdź ofertę</a>
 					  </div>
 				    </div>
 				  </div>
-				  <!-- slide-2 -->
-<!--   				  <div class="carousel-inner text-right" role="listbox">
-				    <div class="carousel-item active">
-				      <img id="standard" src="images/slider_bg.png" class="img-fluid" alt="Lorem ipsum">
-					  <div class="carousel-caption d-none d-md-block">
-					  	<h5>Lorem ipsum dolor sit amet </h5>
-					    <h3>Lorem ipsum dolor </h3>
-					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						<button type="button" class="btn btn-secondary">sprawdź ofertę</button>
-					  </div>
-					  <img id="mobile" src="images/slider_bg-mobile.png" class="img-fluid" alt="Lorem ipsum">
-					   <div class="carousel-caption--mobile  ">
-					  	<h5>Lorem ipsum dolor sit amet </h5>
-					    <h3>Lorem ipsum dolor </h3>
-					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-						<button type="button" class="btn btn-secondary">sprawdź ofertę</button>
-					  </div>
-				    </div>
-				  </div> -->
-				  <!-- slide-3 -->	
-<!--   				  <div class="carousel-inner text-right" role="listbox">
-				    <div class="carousel-item active">
-				      <img id="standard" src="images/slider_bg.png" class="img-fluid" alt="Lorem ipsum">
-					  <div class="carousel-caption d-none d-md-block">
-					  	<h5>Lorem ipsum dolor sit amet </h5>
-					    <h3>Lorem ipsum dolor </h3>
-					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-						<button type="button" class="btn btn-secondary">sprawdź ofertę</button>
-					  </div>
-					  <img id="mobile" src="images/slider_bg-mobile.png" class="img-fluid" alt="Lorem ipsum">
-					   <div class="carousel-caption--mobile  ">
-					  	<h5>Lorem ipsum dolor sit amet </h5>
-					    <h3>Lorem ipsum dolor </h3>
-					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-						<button type="button" class="btn btn-secondary">sprawdź ofertę</button>
-					  </div>
-				    </div>
-				  </div> -->
 				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				    <span class="sr-only">Previous</span>
@@ -135,57 +85,9 @@
 		</div>
 		<!-- //slider -->
 
-		<!-- facebook-card -->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="facebook-card">
-					<a href="https://www.facebook.com/augmed/">
-						<img src="images/facebook-card.png">
-					</a>
-				</div>	
-			</div>
-		</div>
-		<!-- //facebook-card -->
+<?php include 'facebook-card.php';?>		
 
-		<!-- Submenu -->
-		<div class="container-fluid">
-			<div class="row submenu">
-				<a href="#" class="col-md-4 no-padding">
-					<div  class="submenu__box">
-						<i class="fa fa-eye" aria-hidden="true"></i>
-						<h2>Diagnostyka</h2>
-						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</span>
-						<div class="fa-eye-background">
-							<i class="fa fa-eye" aria-hidden="true"></i>
-						</div>
-						<button href="#" class="btn btn-secondary">zobacz</button>
-					</div>
-				</a>
-				<a href="#" class="col-md-4 no-padding">
-					<div  class="submenu__box">
-						<i class="fa fa-low-vision" aria-hidden="true"></i>
-						<h2>Zabiegi</h2>
-						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</span>
-						<div class="fa-low-vision-background">
-							<i class="fa fa-low-vision" aria-hidden="true"></i>
-						</div>
-						<button href="#" class="btn btn-secondary">zobacz</button>
-					</div>
-				</a>
-				<a href="#" class="col-md-4 no-padding">
-					<div class="submenu__box">
-						<i class="fa fa-bullseye" aria-hidden="true"></i>
-						<h2>Optyka</h2>
-						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</span>
-						<div class="fa-bullseye-background">
-							<i class="fa fa-bullseye" aria-hidden="true"></i>
-						</div>
-						<button href="#" class="btn btn-secondary">zobacz</button>
-					</div>
-				</a>
-			</div>
-		</div>		
-		<!-- //Submenu -->
+<?php include 'submenu.php';?>
 
 		<!-- Info -->
 		<div class="container">
@@ -209,7 +111,7 @@
 			<div class="offer row">
 				<div class="container">
 					<div class="row">
-						<div class="title">
+						<div class="info__txt title">
 							<h3>Nasze specjalizacje</h3>
 							<h6>Lorem ipsum dolor sit amet</h6>
 							<img src="images/underline.png" alt="inderline" class="underline">
@@ -219,7 +121,7 @@
 				<div class="row offer__types">
 					<div class="col-lg-3 col-md-6 box opacity">
 						<a href="#">
-							<span class="offer__types-title">Tytuł usługi</span>
+							<span class="offer__types-title">Optyk</span>
 							<img src="images/offer_1.jpg" alt="Oferta" class="img-fluid">
 						</a>
 					</div>
@@ -253,7 +155,7 @@
 		<!-- Paralax-bar -->
 		<div class="container-fluid no-padding">
 			<div class="info-bar">
-				<span>„Lorem ipsum dolor sit amet, consectetur”</span>
+				<span>„Bene dignoscitur, bene curatur.”</span>
 				<img src="images/bg-new.jpg" alt="Placówka Augmed" class="img-fluid" width="1903" height="136"> 
 			</div>
 		</div>
@@ -278,7 +180,7 @@
 					</div>
 				</div>
 				<div id="back-top" class="btn-start text-center">
-					<a href="top" class="opacity">
+					<a href="#top1" class="opacity">
 						<img src="images/arrow-new.png" class="img-fluid">
 					</a>
 				</div>
@@ -293,47 +195,4 @@
 			</div>
 		</div>
 		<!-- //Map -->
-
-		<!-- Footer -->
-		<footer>
-			<div class="container-fluid footer">
-				<div class="row">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3 col-12 footer__logo">
-								<a href="http://www.augmed.pl">
-									<img src="images/logo-footer.png" alt="Augmed logo" class="img-fluid" width="149" height="38">
-								</a>
-							</div>
-							<nav class="col-md-7 col-12">
-								<ul>
-									<a href="#"><li>Start</li></a>
-									<a href="#"><li>Oferta</li></a>
-									<a href="#"><li>Cennik</li></a>
-									<a href="#"><li>Kontakt</li></a>
-								</ul>
-							</nav>
-							<div class="col-md-2 col-12 social">
-								<span>Odwiedź&nbsp;nas&nbsp;na</span>
-								<a href="https://www.facebook.com/augmed/">
-									<i class="fab fa-facebook"></i>
-								</a>
-							</div>
-						</div>
-					</div>	
-				</div>
-			</div>
-			<div class="copyright text-center">
-				<span>Copyright ⓒ 2018 Czesław Augustyn</span>
-			</div>
-		</footer>
-
-		<!-- //Footer -->
-
-		
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-		<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-		<script type="text/javascript" src="js/script.js">	</script>
-	</body>
-</html>
+<?php include 'footer.php';?>
